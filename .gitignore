@@ -41,3 +41,4 @@ htmlcov/
 .tox/
 .nox/
 .coverage
+/.idea
