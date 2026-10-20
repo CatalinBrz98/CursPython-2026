@@ -1,0 +1,6 @@
+tuplu1 = (1, 2, 3, 4, 5)
+tuplu2 = (5, 6, 7, [8, 9])
+tuplu3 = (5, 6, 7, (8, 9))
+print(tuplu2, id(tuplu2))
+tuplu2[3].append(10)
+print(tuplu2, id(tuplu2))
