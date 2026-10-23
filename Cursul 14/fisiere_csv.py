@@ -40,16 +40,18 @@ def write_csv_dict(output_file):
 
         writer.writerows(produse)
 
-def read_csv_dict(input_file):
+def read_csv_dict(input_file: str):
+    print(papagal)
     with open(input_file, "r", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
-            print(row['username'])
+            print(row)
 
 
 if __name__ == '__main__':
     # read_csv("users.csv")
+    read_csv_dict("produse.csv")
     # write_csv("users.csv")
     # write_math("math.csv")
     # write_csv_dict("produse.csv")
-    read_csv_dict("users.csv")
+    # read_csv_dict("users.csv")
