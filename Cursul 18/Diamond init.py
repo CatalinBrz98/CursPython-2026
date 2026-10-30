@@ -40,8 +40,11 @@ class ClasaD(ClasaB, ClasaC):
 
 if __name__ == "__main__":
     a = ClasaA(a=1)
+    print()
     b = ClasaB(a=1, b=2)
+    print()
     c = ClasaC(a=1, c=3)
+    print()
     d = ClasaD(a=1, b=2, c=3, d=4)
 
     a.vorbeste()
