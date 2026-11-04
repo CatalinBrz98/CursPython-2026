@@ -10,6 +10,14 @@ class Vehicle:
         return f'Vehicle: {self.brand}, {self.model}, {self.color}'
 Vehicle.contor = 0
 
+class TemperatureConverter:
+    @staticmethod
+    def celcius_to_fahrenheit(celcius):
+        return celcius * 1.8 + 32
+
+    @staticmethod
+    def fahrenheit_to_celcius(fahrenheit):
+        return fahrenheit - 32 * 1.8
 
 if __name__ == '__main__':
     my_car = Vehicle('Toyota', 'Yaris', "Blue")
