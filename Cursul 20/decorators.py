@@ -1,11 +1,23 @@
 import time
 
 
-def decorator_greeting_func(func):
+def decorator_message_func(func):
 
     def wrapper(*args, **kwargs):
-        print("Hello!")
-        return func(*args, **kwargs)
+        print("Starting the function...")
+        result = func(*args, **kwargs)
+        print("Finished the function...")
+        return result
+
+    return wrapper
+
+def decorator_multiple_func(func):
+
+    def wrapper(*args, **kwargs):
+        result = []
+        for _ in range(3):
+            result.append(func(*args, **kwargs))
+        return result
 
     return wrapper
 

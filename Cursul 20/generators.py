@@ -18,6 +18,24 @@ def my_generator():
 
     yield "Salut!"
 
+def parcurgere_string_generator(text: str):
+    for char in text:
+        yield char
+
+def fibonacci_generator(n: int):
+    a = 0
+    b = 1
+    for _ in range(n):
+        yield a
+        a, b = b, a + b
+
+def fibonacci_gen_inf():
+    a = 0
+    b = 1
+    while True:
+        yield a
+        a, b = b, a + b
+
 if __name__ == '__main__':
     # result = my_range_func(400)
     # print(my_range(10000000000))
@@ -40,6 +58,17 @@ if __name__ == '__main__':
     #     print(next(gen))
     # except StopIteration:
     #     print("StopIteration")
-    values = (x ** 2 for x in range(99999999999) if x % 2 == 0)
-    for value in values:
-        print(value)
+    # values = (x ** 2 for x in range(99999999999) if x % 2 == 0)
+    # for value in values:
+    #     print(value)
+
+    # greeting = "Hello, there, friend!"
+    # for char in parcurgere_string_generator(greeting):
+    #     print(char)
+
+    # for fib_num in fibonacci_generator(10):
+    #     print(fib_num)
+
+    for fib_num in fibonacci_gen_inf():
+        print(fib_num)
+        input()
