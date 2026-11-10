@@ -1,0 +1,127 @@
+if __name__ == '__main__':
+    nume = "Breaz"
+    prenume = "Catalin"
+    persoane = [
+        {"nume": "Iosif", "prenume": "Catalin"},
+        {"nume": "Popescu", "prenume": "Andrei"},
+        {"nume": "Ionescu", "prenume": "Mihai"},
+        {"nume": "Dumitrescu", "prenume": "Alexandru"},
+        {"nume": "Georgescu", "prenume": "Maria"},
+        {"nume": "Stan", "prenume": "Elena"},
+        {"nume": "Stoica", "prenume": "Gabriel"},
+        {"nume": "Radu", "prenume": "Ioana"},
+        {"nume": "Munteanu", "prenume": "Daniel"},
+        {"nume": "Dobre", "prenume": "Cristina"},
+        {"nume": "Marin", "prenume": "Adrian"},
+        {"nume": "Tudor", "prenume": "Alexandra"},
+        {"nume": "Florea", "prenume": "Stefan"},
+        {"nume": "Constantin", "prenume": "Ana"},
+        {"nume": "Gheorghe", "prenume": "Vlad"},
+        {"nume": "Matei", "prenume": "Laura"},
+        {"nume": "Preda", "prenume": "Robert"},
+        {"nume": "Diaconu", "prenume": "Bianca"},
+        {"nume": "Enache", "prenume": "Cristian"},
+        {"nume": "Barbu", "prenume": "Denisa"},
+        {"nume": "Ilie", "prenume": "Paul"},
+        {"nume": "Nistor", "prenume": "Roxana"},
+        {"nume": "Vasilescu", "prenume": "George"},
+        {"nume": "Petrescu", "prenume": "Diana"},
+        {"nume": "Neagu", "prenume": "Florin"},
+        {"nume": "Oprea", "prenume": "Andreea"},
+        {"nume": "Lazar", "prenume": "Cosmin"},
+        {"nume": "Badea", "prenume": "Alina"},
+        {"nume": "Sima", "prenume": "Rares"},
+        {"nume": "Voicu", "prenume": "Gabriela"},
+        {"nume": "Dragomir", "prenume": "Sebastian"},
+        {"nume": "Pavel", "prenume": "Monica"},
+        {"nume": "Mocanu", "prenume": "Ionut"},
+        {"nume": "Sandu", "prenume": "Claudia"},
+        {"nume": "Toma", "prenume": "David"},
+        {"nume": "Dinu", "prenume": "Irina"},
+        {"nume": "Serban", "prenume": "Bogdan"},
+        {"nume": "Anghel", "prenume": "Larisa"},
+        {"nume": "Avram", "prenume": "Matei"},
+        {"nume": "Chiriac", "prenume": "Sofia"},
+        {"nume": "Balan", "prenume": "Victor"},
+        {"nume": "Petcu", "prenume": "Natalia"},
+        {"nume": "Grigore", "prenume": "Eduard"},
+        {"nume": "Rusu", "prenume": "Teodora"},
+        {"nume": "Apostol", "prenume": "Darius"},
+        {"nume": "Manole", "prenume": "Amalia"},
+        {"nume": "Pana", "prenume": "Tudor"},
+        {"nume": "Mihalache", "prenume": "Mara"},
+        {"nume": "Niculae", "prenume": "Alex"},
+        {"nume": "Cristea", "prenume": "Antonia"},
+        {"nume": "Iacob", "prenume": "Marian"},
+        {"nume": "Lungu", "prenume": "Elisabeta"},
+        {"nume": "Moldovan", "prenume": "Patrick"},
+        {"nume": "Cojocaru", "prenume": "Carla"},
+        {"nume": "Bucur", "prenume": "Emil"},
+        {"nume": "Olteanu", "prenume": "Anastasia"},
+        {"nume": "Vlad", "prenume": "Radu"},
+        {"nume": "Manea", "prenume": "Miruna"},
+        {"nume": "Ciobanu", "prenume": "Silviu"},
+        {"nume": "Petrache", "prenume": "Oana"},
+        {"nume": "Dumitru", "prenume": "Lucian"},
+        {"nume": "Popa", "prenume": "Simona"},
+        {"nume": "Rus", "prenume": "Filip"},
+        {"nume": "Muresan", "prenume": "Ilinca"},
+        {"nume": "Gavril", "prenume": "Sorin"},
+        {"nume": "Calin", "prenume": "Teodora"},
+        {"nume": "Savu", "prenume": "Nicolae"},
+        {"nume": "Pascu", "prenume": "Iulia"},
+        {"nume": "Ardelean", "prenume": "Octavian"},
+        {"nume": "Coman", "prenume": "Rebeca"},
+        {"nume": "Olaru", "prenume": "Denis"},
+        {"nume": "Balan", "prenume": "Daria"},
+        {"nume": "Frunza", "prenume": "Mircea"},
+        {"nume": "Birsan", "prenume": "Evelina"},
+        {"nume": "Cazan", "prenume": "Damian"},
+        {"nume": "Breaz", "prenume": "Catalin"},
+        {"nume": "Istrate", "prenume": "Anca"},
+        {"nume": "Mihai", "prenume": "Alexandru"},
+        {"nume": "Dragan", "prenume": "Eliza"},
+        {"nume": "Goga", "prenume": "Calin"},
+        {"nume": "Banu", "prenume": "Patricia"},
+        {"nume": "Savu", "prenume": "Vasile"},
+        {"nume": "Pintea", "prenume": "Madalina"},
+        {"nume": "Botezatu", "prenume": "Eric"},
+        {"nume": "Grosu", "prenume": "Ilona"},
+        {"nume": "Dobreanu", "prenume": "Matei"},
+        {"nume": "Cernat", "prenume": "Lavinia"},
+        {"nume": "Sorescu", "prenume": "Tiberiu"},
+        {"nume": "Balanica", "prenume": "Nicoleta"},
+        {"nume": "Petric", "prenume": "Raul"},
+        {"nume": "Moraru", "prenume": "Carmen"},
+        {"nume": "Baciu", "prenume": "Dumitru"},
+        {"nume": "Cretu", "prenume": "Iasmina"},
+        {"nume": "Gherman", "prenume": "Stefania"},
+        {"nume": "Plopeanu", "prenume": "Marius"},
+        {"nume": "Cojan", "prenume": "Alexia"},
+        {"nume": "Benga", "prenume": "Dorian"},
+        {"nume": "Puiu", "prenume": "Gabriela"},
+        {"nume": "Maxim", "prenume": "Andrei"},
+        {"nume": "Voinea", "prenume": "Raluca"},
+        {"nume": "Danciu", "prenume": "Emanuel"},
+        {"nume": "Sava", "prenume": "Iasmina"},
+        {"nume": "Morar", "prenume": "Vlad"},
+    ]
+
+    am_gasit = False
+    persoane_cautate = 0
+    for persoana in persoane:
+        persoane_cautate += 1
+
+        if persoana["nume"] == nume and persoana["prenume"] == prenume:
+            am_gasit = True
+            break
+
+        # if persoana nu e femeie sau nu are peste 80 de ani:
+        #     continue
+        # ne conectam la baza de date
+        # cautam rudele
+        # if conditia legata de rude este acceptata:
+        #     am_gasit = True
+        #     break
+
+    print(am_gasit, persoane_cautate)

@@ -33,7 +33,6 @@ def timer_decorator(func):
     return wrapper
 
 @timer_decorator
-@decorator_greeting_func
 def calc_sum(nums: list[float]) -> float:
     nums_sum = 0
     for num in nums:
