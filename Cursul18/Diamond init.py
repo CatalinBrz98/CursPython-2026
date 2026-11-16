@@ -53,3 +53,6 @@ if __name__ == "__main__":
     d.vorbeste()
 
     print(ClasaD.mro())
+    print("############################################")
+
+    super(type(b), b).vorbeste()

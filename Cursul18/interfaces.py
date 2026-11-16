@@ -1,18 +1,18 @@
 class Printable:
-    def printable(self):
+    def print_func(self):
         raise NotImplementedError
 
 class Scannable:
-    def scannable(self):
+    def scan_func(self):
         raise NotImplementedError
 
 class OldPrinter(Printable):
-    def printable(self):
+    def print_func(self):
         print("I printed something")
 
 class ModernPrinter(Printable, Scannable):
-    def printable(self):
+    def print_func(self):
         print("I printed something")
 
-    def scannable(self):
+    def scan_func(self):
         print("I scanned something")
