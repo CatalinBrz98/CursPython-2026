@@ -1,0 +1,11 @@
+id,name,category,price,discount,quantity
+1,Laptop Asus VivoBook,Electronice,3500,10,5
+2,Telefon Samsung Galaxy A54,Telefoane,1800,15,12
+3,Căști Sony WH-1000XM5,Audio,1200,20,8
+4,Monitor LG 27 inch,Monitoare,900,5,3
+5,Tastatură Logitech MX Keys,Periferice,550,0,15
+6,Mouse Razer DeathAdder,Periferice,350,25,20
+7,Imprimantă HP LaserJet,Imprimante,750,10,6
+8,Tabletă iPad Air,Tablete,2800,5,4
+9,SSD Samsung 1TB,Stocare,450,30,25
+10,Webcam Logitech C920,Periferice,400,15,9
